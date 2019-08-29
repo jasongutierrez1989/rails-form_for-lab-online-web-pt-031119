@@ -142,3 +142,21 @@ Processing by SchoolClassesController#edit as HTML
 Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.2ms)
 
 
+Started PATCH "/school_classes/1" for 104.183.142.4 at 2019-08-29 02:30:01 +0000
+Processing by SchoolClassesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dfYbpQzaRJHPA3rFD8e6wQmJXIxkYM7Ct2694rQ2xZOGJuErkYS0+ZfYKETKOaAP8MUbU7DRTzMXHNct+NBeHw==", "school_class"=>{"title"=>"cs100", "room_number"=>"105"}, "commit"=>"Update School class", "id"=>"1"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "school_classes" SET "title" = ?, "room_number" = ?, "updated_at" = ? WHERE "school_classes"."id" = ?[0m  [["title", "cs100"], ["room_number", 105], ["updated_at", "2019-08-29 02:30:01.083493"], ["id", 1]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://178.128.13.85:41604/school_classes.1
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/school_classes.1" for 104.183.142.4 at 2019-08-29 02:30:01 +0000
+Processing by SchoolClassesController#index as 
+  Rendering school_classes/index.html.erb within layouts/application
+  Rendered school_classes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
