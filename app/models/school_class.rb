@@ -1,2 +1,2 @@
-class SchoolClass < ApplicationRecord
+class SchoolClass < ActionController::Base
 end
