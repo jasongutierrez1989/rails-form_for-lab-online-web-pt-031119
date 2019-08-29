@@ -1,2 +1,2 @@
-class SchoolClass < ActionController::Base
+class SchoolClass < ActiveRecord::Base
 end
