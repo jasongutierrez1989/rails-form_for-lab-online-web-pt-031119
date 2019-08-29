@@ -176,3 +176,22 @@ Processing by SchoolClassesController#new as HTML
 Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/school_classes" for 104.183.142.4 at 2019-08-29 02:30:37 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8pRv4MofSnAiCf1bCi5RbXwhKQJl13hUXnbwf70ivtoBRJVuV0G6GHrSr9rP0EujhW1u3bFm+aX+BJqw8cQlVg==", "school_class"=>{"title"=>"flska;jd", "room_number"=>""}, "commit"=>"Create School class"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "school_classes" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "flska;jd"], ["created_at", "2019-08-29 02:30:37.965868"], ["updated_at", "2019-08-29 02:30:37.965868"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://178.128.13.85:41604/school_classes/2
+Completed 302 Found in 8ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/school_classes/2" for 104.183.142.4 at 2019-08-29 02:30:38 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.1ms)
+
+
