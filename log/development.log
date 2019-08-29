@@ -104,3 +104,6 @@ Started GET "/school_classes" for 104.183.142.4 at 2019-08-29 02:29:26 +0000
 Processing by SchoolClassesController#index as HTML
   Rendering school_classes/index.html.erb within layouts/application
   Rendered school_classes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 366ms (Views: 362.1ms | ActiveRecord: 0.0ms)
+
+
